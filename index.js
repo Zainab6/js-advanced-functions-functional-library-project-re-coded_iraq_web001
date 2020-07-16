@@ -155,10 +155,17 @@ values:function(obj){
   return values
 },
 functions:function(obj){
+<<<<<<< HEAD
   let functionNames = []
   for (let key in obj){
     if (typeof obj[key] === "function"){
       functionNames.push(key)
+=======
+  let functionNames = 
+  for (let key in obj){
+    if (typeof obj[key] === "function"){
+      return functionNames.push(key)
+>>>>>>> 1542c6880e8dbbe084c3ec119459a7fc55187e0a
     }
   }
   return functionNames.sort()
